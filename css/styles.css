@@ -1,104 +1,217 @@
-
-body{
-    font-family: roboto, sans-serif;
-    font-style: normal;
-    color: #212121;
-    
+:root {
+	--primary-bg-color: #ffffff;
+	--secondary-bg-color: #2f303a;
+	--color-main-text: #212121;
+	--color-secondary-text: #757575;
+	--white: #ffffff;
+	--accent: #2196f3;
+	--color-bg-team: #f5f4fa;
+	--color-footers-link: rgba(255, 255, 255, 0.6);
+}
+body {
+	background-color: var(--primary-bg-color);
+	color: var(--color-main-text);
+	font-family: Roboto, sans-serif;
+	font-style: 400;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.logo {
+	color: var(--color-main-text);
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+}
+.logo .logopart1 {
+	color: var(--accent);
+}
+.navigation .link {
+	color: var(--color-main-text);
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	font-style: normal;
+}
+.navigation .link:hover,
+.navigation .link:focus {
+	color: var(--accent);
+}
+.navigation-contacts{
+	color: var(--color-secondary-text);
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	font-style: normal;
+}
+.navigation-contacts:hover,
+.navigation-contacts:focus {
+	color: var(--accent);
+}
+.main {
+	background: var(--secondary-bg-color);
+	color: var(--white);
+}
+.main h1 {
+	font-style: 400;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
 }
 
-button:hover, button:focus {
-    background-color: #2196F3;;
-    color: white;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    cursor: pointer;
+.btn {
+	background-color: var(--accent);
+	color: var(--white);
+	font-style: 400;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.87;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 0 auto;
+	display: block;
 }
-.contacts:hover, .contacts:focus {
-    color: #2196F3;
+.btn:hover, .btn:focus{
+    background-color: #188ce8;
+    color: #ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
 
 }
-
-.logopart1 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: #2196F3;
+.btnportfolio {
+	color: var(--color-main-text);
+	font-style: 500;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.87;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 0 auto;
+	display: block;
 }
-.logopart2 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: black;
+.btnportfolio:hover, .btn:focus{
+    background-color: #188ce8;
+    color: #ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-h1 {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
+section p {
+	color: var(--color-secondary-text);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
 }
 
-    h2{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    
+section h2 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	color: var(--color-main-text);
 }
-h3 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    
+.ouradvantages {
+	display: none;
 }
-h4 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-
-}
-.features, .examples {
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
-
+.advantages h3 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
 }
 .team {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-    color: #757575;
+	background-color: var(--color-bg-team);
 }
-address {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-
+.team h3 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
 }
-.navigation {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-
+.team p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
 }
-.navigation:hover, .navigation:focus, .ourexamples:hover, .ourexamples:focus {
-    color: #2196F3;
 
-} 
+.btn-list {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.63;
+	text-align: center;
+	letter-spacing: 0.03em;
+	
+}
+
+.btn-list .item {
+	background-color: var(--color-bg-team);
+	font-family: inherit;
+}
+
+.btn-list .button:hover,
+.btn-list .button:focus {
+	background-color: var(--accent);
+	color: var(--primary-bg-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border: 0;
+	border-radius: 1px;
+}
+.ourprojects {
+	display: none;
+}
+.portfolio h2 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.portfolio p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.03em;
+}
+.footer {
+	background-color: var(--secondary-bg-color);
+	color: var(--primary-bg-color);
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
+.footer p {
+	font-size: 14px;
+	line-height: 1.71;
+	font-style: normal;
+	color: var(--white-text-color);
+}
+
+.footer .footer-contacts {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--color-secondary-text);
+}
+.footer .footer-contacts:hover,
+.footer .footer-contacts:focus {
+	color: var(--primary-bg-color);
+}
