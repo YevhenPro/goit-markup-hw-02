@@ -205,13 +205,14 @@ section h2 {
 
 .footer .footer-contacts {
 	font-style: normal;
-	font-weight: 400;
+	/* font-weight: 400; */
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-	color: var(--color-secondary-text);
+	color: var(--primary-bg-color);
+	text-decoration: none;
 }
 .footer .footer-contacts:hover,
 .footer .footer-contacts:focus {
-	color: var(--primary-bg-color);
+	color: var(--color-footers-link);
 }
