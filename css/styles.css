@@ -53,12 +53,15 @@ a {
 	letter-spacing: 0.02em;
 	font-style: normal;
 }
-.navigation-contacts:hover,
+/* .navigation-contacts:hover,
 .navigation-contacts:focus {
 	color: var(--accent);
-}
-.navigation.current {
+} */
+.navigation .link-current {
     color: var(--accent);
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
   }
 .main {
 	background: var(--secondary-bg-color);
